@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="formBtns">
+            <button id="loginFormBtn">Login</button>
+            <button id="signupFormBtn">Signup</button>
+        </div>
+        <form action="#" class="forms" id="loginForm">
+            <div class="loginDiv">
+                <label for="userName">Username:</label>
+                <input type="text" name="userName" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+                <br>
+                <div id="signupDiv" class="formHidden">
+                    <form action="#" class="forms" id="signupForm">
+                        <label for="passwordAgain">Password again:</label>
+                        <input type="password" name="passwordAgain" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required>
+                    </form>
+                </div>
+                <button id="loginBtn">Login</button>
+                <br>
+                <a href="#" class="pwdForget">Forgot your password?</a>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

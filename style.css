@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+body {
+    background-repeat: no-repeat;
+    color: white;
+    background-image: url('img/bg.jpg');
+    font-family: 'Red Hat Mono', monospace;
+    background-size: cover;
+}
+
+button {
+    color: white;
+    font-family: 'Red Hat Mono', monospace;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    transition: color 0.25s;
+}
+
+button:hover {
+    color: #60daaa;
+}
+
+.formHidden {
+    display: none;
+}
+
+
+/* rgb(48, 211, 189) */
+
+.container {
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 1%;
+    min-width: 400px;
+    width: 30%;
+    margin: 8% auto;
+}
+
+.loginDiv {
+    padding: 12%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 25%;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#signupDiv {
+    flex-direction: column;
+    column-gap: 25%;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.formBtns {
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.forms {
+    margin-bottom: 5%;
+}
+
+#loginFormBtn {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding: 5%;
+}
+
+#signupFormBtn {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    padding: 5%;
+}
+
+#loginBtn {
+    font-size: 25px;
+    border: none;
+    padding: 3%;
+    margin-top: 20%;
+    text-align: center;
+}
+
+#loginBtn:after {
+    transition: all ease-in-out .5s;
+    background: none repeat scroll 0 0 #ffffff;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+}
+
+#loginBtn:hover:after {
+    width: 100%;
+}
+
+label {
+    width: 2%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15%;
+}
+
+input {
+    color: black;
+    font-size: 21px;
+    max-width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.pwdForget {
+    text-align: center;
+    color: black;
+    margin-top: 15px;
+}
+
+.pwdForget:hover {
+    transition: color .7s;
+    color: #60daaa;
+}
